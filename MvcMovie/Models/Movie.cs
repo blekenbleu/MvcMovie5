@@ -29,7 +29,7 @@ namespace MvcMovie.Models
         [StringLength(5)]
         public string Rating { get; set; }
     }
-
+    /*
     public class MovieDBContext : DbContext
     {
         public MovieDBContext()
@@ -39,5 +39,5 @@ namespace MvcMovie.Models
                     MvcMovie.Migrations.Configuration>());
         }
         public DbSet<Movie> Movies { get; set; }
-    }
+    } */
 }

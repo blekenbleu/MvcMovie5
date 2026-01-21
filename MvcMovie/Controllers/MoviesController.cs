@@ -12,10 +12,10 @@ namespace MvcMovie.Controllers
 {
     public class MoviesController : Controller
     {
-        private MovieDBContext db = new MovieDBContext();
+//        private MovieDBContext db = new MovieDBContext();
 
         // GET: /Movies/
-        public ActionResult Index(string movieGenre, string searchString)
+/*        public ActionResult Index(string movieGenre, string searchString)
         {
             var GenreLst = new List<string>();
 
@@ -42,7 +42,7 @@ namespace MvcMovie.Controllers
             return View(movies);
         }
 
-        /*
+        
 MovieDBContext db = new MovieDBContext();
 Movie movie = new Movie();
 movie.Title = "Gone with the Wind";
@@ -57,7 +57,7 @@ public ActionResult Details(int? id)
     {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
     }
-    Movie movie = db.Movies.Find(id);
+            Movie movie = null; //db.Movies.Find(id);
     if (movie == null)
     {
         return HttpNotFound();
@@ -93,8 +93,8 @@ public ActionResult Create([Bind(Include = "ID,Title,ReleaseDate,Genre,Price,Rat
 {
     if (ModelState.IsValid)
     {
-        db.Movies.Add(movie);
-        db.SaveChanges();
+//        db.Movies.Add(movie);
+//        db.SaveChanges();
         return RedirectToAction("Index");
     }
 
@@ -108,7 +108,7 @@ public ActionResult Edit(int? id)
     {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
     }
-    Movie movie = db.Movies.Find(id);
+            Movie movie = null; // db.Movies.Find(id);
     if (movie == null)
     {
         return HttpNotFound();
@@ -125,8 +125,8 @@ public ActionResult Edit([Bind(Include = "ID,Title,ReleaseDate,Genre,Price,Ratin
 {
     if (ModelState.IsValid)
     {
-        db.Entry(movie).State = EntityState.Modified;
-        db.SaveChanges();
+//        db.Entry(movie).State = EntityState.Modified;
+//        db.SaveChanges();
         return RedirectToAction("Index");
     }
     return View(movie);
@@ -139,7 +139,7 @@ public ActionResult Delete(int? id)
     {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
     }
-    Movie movie = db.Movies.Find(id);
+            Movie movie = null;// db.Movies.Find(id);
     if (movie == null)
     {
         return HttpNotFound();
@@ -152,9 +152,7 @@ public ActionResult Delete(int? id)
 [ValidateAntiForgeryToken]
 public ActionResult DeleteConfirmed(int id)
 {
-    Movie movie = db.Movies.Find(id);
-    db.Movies.Remove(movie);
-    db.SaveChanges();
+    Movie movie = null;
     return RedirectToAction("Index");
 }
 
@@ -162,7 +160,7 @@ public ActionResult DeleteConfirmed(int id)
         {
             if (disposing)
             {
-                db.Dispose();
+ //               db.Dispose();
             }
             base.Dispose(disposing);
         }
