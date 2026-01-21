@@ -2,11 +2,11 @@
 namespace MvcMovie.Migrations
 {
     using System.CodeDom.Compiler;
-    using System.Data.Entity.Migrations;
-    using System.Data.Entity.Migrations.Infrastructure;
+ //   using System.Data.Entity.Migrations;
+ //   using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")]
+  /*  [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")] /*
     public sealed partial class DataAnnotations : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(DataAnnotations));
@@ -25,5 +25,5 @@ namespace MvcMovie.Migrations
         {
             get { return Resources.GetString("Target"); }
         }
-    }
+    } */
 }

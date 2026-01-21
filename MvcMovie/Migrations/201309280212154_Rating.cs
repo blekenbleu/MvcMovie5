@@ -1,9 +1,9 @@
 namespace MvcMovie.Migrations
 {
     using System;
-    using System.Data.Entity.Migrations;
+   // using System.Data.Entity.Migrations;
     
-    public partial class Rating : DbMigration
+   /* public partial class Rating : DbMigration
     {
         public override void Up()
         {
@@ -14,5 +14,5 @@ namespace MvcMovie.Migrations
         {
             DropColumn("dbo.Movies", "Rating");
         }
-    }
+    } */
 }

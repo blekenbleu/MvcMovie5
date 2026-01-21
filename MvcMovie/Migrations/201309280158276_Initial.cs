@@ -1,9 +1,9 @@
 namespace MvcMovie.Migrations
 {
     using System;
-    using System.Data.Entity.Migrations;
+    //using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+   /* public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -25,5 +25,5 @@ namespace MvcMovie.Migrations
         {
             DropTable("dbo.Movies");
         }
-    }
+    } */
 }

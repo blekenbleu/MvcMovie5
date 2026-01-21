@@ -1,7 +1,7 @@
 namespace MvcMovie.Migrations
 {
     using System;
-    using System.Data.Entity.Migrations;
+ /*   using System.Data.Entity.Migrations;
     
     public partial class DataAnnotations : DbMigration
     {
@@ -18,5 +18,5 @@ namespace MvcMovie.Migrations
             AlterColumn("dbo.Movies", "Genre", c => c.String());
             AlterColumn("dbo.Movies", "Title", c => c.String());
         }
-    }
+    } */
 }
