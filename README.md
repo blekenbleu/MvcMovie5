@@ -2,6 +2,8 @@
  &emsp; *cloned from https://github.com/kexuelou/MvcMovie5*  
 
 ## `net45`, Runtime Version v4.0.30319 [ASP.NET MVC 4](https://learn.microsoft.com/en-us/aspnet/mvc/mvc4)
+- seemingly does not use [Razor](https://github.com/blekenbleu/OpenKneeboard-SimHub-plugin-menu/blob/main/WebForms.md)  
+
 Sample application for [Getting Started with ASP.NET MVC 5](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started)
 - Creating *new* ASP.NET MVC projects in Visual Studio is problematic.
 	- it wants to use `<TargetFrameworkVersion>` newer than `v4.8`
